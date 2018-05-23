@@ -1,0 +1,34 @@
+#Indexing
+python_versions = [1.0, 1.5, 1.6, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 3.0, 3.1, 3.2, 3.3, 3.4, 3.5, 3.6]
+print(python_versions[2])
+print(python_versions[0:3])
+print(python_versions[:1])
+print(python_versions[9:])
+
+sample_list = ['Graham', 'John', 'Terry', 'Eric', 'Terry', 'Michael']
+sample_list[2] = 'J'
+print(sample_list)
+
+#mutation
+
+sample_list = ['Graham', 'John', 'Terry', 'Eric', 'Terry', 'Michael']
+new_list = sample_list
+sample_list[2] = 'Joe'
+print(new_list)
+print(sample_list)
+
+sample_string = 'Graham'
+new_string = sample_string
+sample_string = 'John'
+print(new_string)
+print(sample_string)
+
+python_varieties = ['Burmese Python', 'African Rock Python', 'Ball Python', 'Reticulated Python', 'Angolan Python']
+python_varieties.append('Blood Python')
+print(python_varieties)
+
+stuff = ["q","w","k"]
+print(" and ".join(stuff))
+print(stuff)
+print(stuff.append("s"))
+print(stuff)
