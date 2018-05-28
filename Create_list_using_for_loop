@@ -1,0 +1,32 @@
+# Updating elements of a list
+names = ["abc","def","ghi","jkl","mno","pqr"]
+for name in names:
+    print(name.title())
+
+# WE CAN CREATE LISTS USNG FOR LOOPS
+# Updating existing list and save as new list
+list1 = ["abc","def","ghi","jkl","mno","pqr"]
+capitalised_list = []
+for elements in list1:
+    capitalised_list.append(elements.title())
+
+print(capitalised_list)
+
+# Overwriting existing list
+list2 = ["abc","def","ghi","jkl","mno","pqr"]
+for index in range(len(list2)):
+    list2[index] = list2[index].title()
+
+print(list2)
+
+Run:
+
+Abc
+Def
+Ghi
+Jkl
+Mno
+Pqr
+['abc', 'def', 'ghi', 'jkl', 'mno', 'pqr']
+['Abc', 'Def', 'Ghi', 'Jkl', 'Mno', 'Pqr']
+['Abc', 'Def', 'Ghi', 'Jkl', 'Mno', 'Pqr']
