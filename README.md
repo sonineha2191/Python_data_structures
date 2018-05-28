@@ -5,3 +5,5 @@ Apart from integers, floats and strings, there are various other data structures
 
 1. Lists
 
+Lists are array 
+
