@@ -1,4 +1,4 @@
-#Lists are array containe in square brackets. A single list can contain strings, integers or floats.
+#Lists are array in square brackets, used to store data. A single list can contain strings, integers or floats.
 
 # Declaring and printing list
 L = [1, "a" , "string" , 1+2]
