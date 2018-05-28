@@ -4,7 +4,7 @@ for name in names:
     print(name.title())
 
 # WE CAN CREATE LISTS USNG FOR LOOPS
-# Updating existing list and save as new list
+## Updating existing list and save as new list
 list1 = ["abc","def","ghi","jkl","mno","pqr"]
 capitalised_list = []
 for elements in list1:
@@ -12,21 +12,81 @@ for elements in list1:
 
 print(capitalised_list)
 
-# Overwriting existing list
+## Overwriting existing list
 list2 = ["abc","def","ghi","jkl","mno","pqr"]
 for index in range(len(list2)):
     list2[index] = list2[index].title()
 
 print(list2)
 
+#Creating new list
+new_list = []
+for numbers in range(4):
+    new_list.append(numbers)
+print(new_list)
+
+# Creating an HTML list
+
+#define the  html_list function
+def html_list(list_of_strings):
+    html_list = "<ul>\n"
+    # Your code goes here!
+    for index in list_of_strings:
+        html_list += "<li>{}</li>\n".format(index)
+    html_list += "</ul>"
+    return html_list
+
+print(html_list(['First element', 'Second element', 'Third element']))
+
+#dummy variable in range
+def starbox(width, height):
+    """print a box made up of asterisks.
+
+    width: width of box in characters, must be at least 2
+    height: height of box in lines, must be at least 2
+    """
+    print("*" * width)  # print top edge of box
+
+    # print sides of box
+    # todo: print this line height-2 times, instead of three times
+    for _ in range(height - 2):
+        print("*" + " " * (width - 2) + "*")
+
+    print("*" * width)  # print bottom edge of box
+
+
+# Test Cases
+print("Test 1:")
+starbox(5, 5)  # this prints correctly
+
+print("Test 2:")
+starbox(2, 3)  # this currently prints two lines too tall - fix it!
+
 Run:
 
+C:\Users\Neha\Anaconda3\envs\myenv\python.exe "D:/Google Drive/Courses/Nanodegree_AI_foundation/Codes/for_loop.py"
 Abc
 Def
 Ghi
 Jkl
 Mno
 Pqr
-['abc', 'def', 'ghi', 'jkl', 'mno', 'pqr']
 ['Abc', 'Def', 'Ghi', 'Jkl', 'Mno', 'Pqr']
 ['Abc', 'Def', 'Ghi', 'Jkl', 'Mno', 'Pqr']
+[0, 1, 2, 3]
+<ul>
+<li>First element</li>
+<li>Second element</li>
+<li>Third element</li>
+</ul>
+Test 1:
+*****
+*   *
+*   *
+*   *
+*****
+Test 2:
+**
+**
+**
+
