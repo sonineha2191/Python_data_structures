@@ -1,0 +1,34 @@
+# while loop
+# Indefinite iteration: loop's body is run an indefinate number of times and ends when a condition is met.
+# FOR LOOPS: Definite iteration: Run a definate number(e.g. defined using range)
+
+# Simple example_1
+
+while sum(hand) <= 17:
+    hand.append(card_deck.pop())
+    print(card_deck)
+    print(hand)
+
+print(hand)
+
+#RUN
+
+[4, 11, 8, 5, 13, 2, 8]
+[10]
+[4, 11, 8, 5, 13, 2]
+[10, 8]
+[10, 8]
+
+#simple_example_2
+
+def nearest_square(limit):
+    no=0 # initiate number sequence
+    while (no)**2 < limit: # while the statement is true
+        no += 1 # increment number
+    return (no-1)**2 
+
+test1 = nearest_square(40)
+print("expected result: 36, actual result: {}".format(test1))
+
+# RUN
+expected result: 36, actual result: 36
