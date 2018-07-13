@@ -8,4 +8,5 @@ Apart from integers, floats and strings, there are various other data structures
 3. while loop
 4. Sets
 5. Dictionaries
-
+6. Compound Datastructures (Dictionries of Dictionaries)
+7. Tuples
